@@ -1,0 +1,11 @@
+pipenv install
+pipenv install django
+pipenv requirements > requirements.txt
+django-admin startproject config .
+python manage.py runserver
+# CHECK BROWSER
+# CREATE Dockerfile and add config
+# CREATE .dockerignore and add config
+docker build .
+# CREATE docker-compose.yml and add config
+docker-compose up
